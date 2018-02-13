@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyTask</string>
+    <string name="input_hint">Введите текст</string>
+    <string name="input_show">Показать текст</string>
+</resources>
