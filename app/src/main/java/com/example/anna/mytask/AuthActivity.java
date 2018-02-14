@@ -21,6 +21,7 @@ public class AuthActivity extends AppCompatActivity {
                 showMessage(mInputText.getText().toString());
             }
         }
+
     };
 
     private void showMessage(String massage){
