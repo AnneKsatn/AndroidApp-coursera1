@@ -1,5 +1,6 @@
 package com.example.anna.mytask;
 
+import android.content.Intent;
 import android.support.annotation.StringRes;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -19,6 +20,12 @@ public class AuthActivity extends AppCompatActivity {
         public void onClick(View v) {
             if (!TextUtils.isEmpty(mInputText.getText())) {
                 showMessage(mInputText.getText().toString());
+                Intent startSecindIntent =
+                        new Intent(AuthActivity.this, SecondActivity.class);
+                startSecindIntent.putExtra(SecondActivity.NEW_TEXT, mInputText.getText().toString());
+                startActivity(startSecindIntent);
+            } else{
+
             }
         }
 
