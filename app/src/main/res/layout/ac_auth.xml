@@ -10,7 +10,7 @@
 
     <EditText
         android:gravity="center"
-        android:id="@+id/etInput"
+        android:id="@+id/etInputText"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:hint="@string/input_hint"
@@ -21,12 +21,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
+
         >
 
 
         <Button
             android:layout_centerHorizontal="true"
-            android:id="@+id/buttonShow"
+            android:id="@+id/mShowText"
             android:text="@string/input_show"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
