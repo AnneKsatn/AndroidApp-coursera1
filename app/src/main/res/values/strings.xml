@@ -3,4 +3,5 @@
     <string name="input_hint">Введите текст</string>
     <string name="input_show">Показать текст</string>
     <string name="title_activity_second">SecondActivity</string>
+    <string name="find_inGoogle">Найти в GOOGLE.COM</string>
 </resources>

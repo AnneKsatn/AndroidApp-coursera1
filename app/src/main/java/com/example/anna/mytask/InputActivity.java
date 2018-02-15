@@ -1,7 +1,6 @@
 package com.example.anna.mytask;
 
 import android.content.Intent;
-import android.support.annotation.StringRes;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -10,7 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class AuthActivity extends AppCompatActivity {
+public class InputActivity extends AppCompatActivity {
 
     private EditText mInputText;
     private Button mShowText;
@@ -21,8 +20,8 @@ public class AuthActivity extends AppCompatActivity {
             if (!TextUtils.isEmpty(mInputText.getText())) {
                 showMessage(mInputText.getText().toString());
                 Intent startSecindIntent =
-                        new Intent(AuthActivity.this, SecondActivity.class);
-                startSecindIntent.putExtra(SecondActivity.NEW_TEXT, mInputText.getText().toString());
+                        new Intent(InputActivity.this, FindActivity.class);
+                startSecindIntent.putExtra(FindActivity.NEW_TEXT, mInputText.getText().toString());
                 startActivity(startSecindIntent);
             } else{
 
@@ -39,7 +38,7 @@ public class AuthActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.ac_auth);
+        setContentView(R.layout.ac_input);
 
         mInputText =findViewById(R.id.etInputText);
         mShowText =findViewById(R.id.mShowText);

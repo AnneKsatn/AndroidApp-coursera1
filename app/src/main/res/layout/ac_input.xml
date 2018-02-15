@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="50dp"
+    android:background="@drawable/gradient_background"
     >
 
     <EditText
@@ -13,6 +13,7 @@
         android:id="@+id/etInputText"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
+        android:layout_marginTop="50dp"
         android:hint="@string/input_hint"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />

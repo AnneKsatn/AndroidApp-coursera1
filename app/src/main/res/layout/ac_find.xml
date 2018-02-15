@@ -2,20 +2,24 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background">
+
 
     <TextView
-        android:id="@+id/tvText"
+        android:id="@+id/tvFindText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="50dp"
         android:text="TEXT View"/>
 
 
     <Button
-        android:id="@+id/button2"
+        android:layout_marginTop="50dp"
+        android:id="@+id/btFindInGoogle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="BUTTON"/>
+        android:text="@string/find_inGoogle"/>
+
 
 </LinearLayout>
